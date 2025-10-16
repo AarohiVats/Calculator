@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pastel Glass Calculator</title>
+  <link rel="stylesheet" href="calculator.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Aarohi <span class="accent">Calculator</span></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / Title -->
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1>Beautiful Calculator</h1>
+          <p class="lead">A responsive, pastel glassmorphism calculator — built with HTML, CSS Grid & JavaScript.</p>
+        </div>
+
+        <!-- Converter Card (Calculator) -->
+        <div id="calculator" class="glass-card">
+          <div class="display" id="display" aria-live="polite">0</div>
+
+          <div class="key-grid" role="application" aria-label="Calculator">
+            <!-- Row 1 -->
+            <button class="btn func" data-action="clear" aria-label="clear">C</button>
+            <button class="btn func" data-action="delete" aria-label="delete">⌫</button>
+            <button class="btn func" data-value="(" aria-label="open parenthesis">(</button>
+            <button class="btn func" data-value=")" aria-label="close parenthesis">)</button>
+
+            <!-- Row 2 -->
+            <button class="btn num" data-value="7">7</button>
+            <button class="btn num" data-value="8">8</button>
+            <button class="btn num" data-value="9">9</button>
+            <button class="btn op" data-value="÷">÷</button>
+
+            <!-- Row 3 -->
+            <button class="btn num" data-value="4">4</button>
+            <button class="btn num" data-value="5">5</button>
+            <button class="btn num" data-value="6">6</button>
+            <button class="btn op" data-value="×">×</button>
+
+            <!-- Row 4 -->
+            <button class="btn num" data-value="1">1</button>
+            <button class="btn num" data-value="2">2</button>
+            <button class="btn num" data-value="3">3</button>
+            <button class="btn op" data-value="-">−</button>
+
+            <!-- Row 5 -->
+            <button class="btn num zero" data-value="0">0</button>
+            <button class="btn num" data-value=".">.</button>
+            <button class="btn equals" data-action="equals" aria-label="equals">=</button>
+            <button class="btn op" data-value="+">+</button>
+          </div>
+
+          <div class="hint">Tip: Use keyboard keys (numbers, + - * / Enter Backspace)</div>
+        </div>
+        <!-- end card -->
+      </div>
+    </section>
+
+    <!-- About / Footer area -->
+    <section id="about" class="container info">
+      <h2>About this Calculator</h2>
+      <p>
+        This calculator implements basic arithmetic operations (+ − × ÷), parentheses, decimal numbers,
+        and keyboard support. It uses a CSS <strong>grid</strong> for layout, a soft pastel gradient
+        background and <strong>glassmorphism</strong> styling for the card. Results animate subtly for a
+        nicer user experience.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aarohi Vats — Elegant UI · Responsive · Lightweight</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="calculator.js"></script>
+</body>
+</html>
